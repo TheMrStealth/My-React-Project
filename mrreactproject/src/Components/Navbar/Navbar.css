@@ -1,0 +1,31 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#background-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#background-panel > div{
+
+    margin: 2px 4px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    
+
+}
+
+/* #background-panel > div:hover{
+    background-color: cyan;
+}
+
+#background-panel > div:active{
+    background-color: seashell;
+} */
