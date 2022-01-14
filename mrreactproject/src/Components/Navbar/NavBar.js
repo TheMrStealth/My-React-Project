@@ -2,7 +2,7 @@ import React from 'react';
 import './Navbar.css';
 function navbar() {
     return (
-        <div id="background-panel" style={{ 
+        <nav id="background-panel" style={{ 
             backgroundImage: `url(${process.env.PUBLIC_URL + '/images/earthfromspace.jpg'})` 
           }}>
             <div>
@@ -18,9 +18,9 @@ function navbar() {
                 Marvel
             </div>
             <div>
-                DC
+                Youtube
             </div>
-        </div>
+        </nav>
     )
 }
 
