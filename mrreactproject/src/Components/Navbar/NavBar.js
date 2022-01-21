@@ -15,10 +15,13 @@ function navbar() {
                 Dragon Ball
             </div>
             <div>
-                Marvel
+                Twitch
             </div>
             <div>
                 Youtube
+            </div>
+            <div>
+                Discord
             </div>
         </nav>
     )
