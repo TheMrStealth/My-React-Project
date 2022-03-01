@@ -11,6 +11,7 @@ body {
     justify-content: space-evenly;
     top: 0;
     z-index: 99;
+    object-fit: cover;
 }
 
 #background-panel > div{

@@ -13,7 +13,9 @@ function navbar() {
                 </Link>
             </div>
             <div>
-                FORTNITE
+                <Link to='/MovieReview'>
+                    Movie Review
+                </Link>
             </div>
             <div>
                 <Link to='/Game'>
