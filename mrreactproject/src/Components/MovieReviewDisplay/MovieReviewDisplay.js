@@ -8,7 +8,7 @@ function MovieReviewDisplay() {
   return (
     <div className='moviereview-display-container'>
         <img className='moviereview-display-background' src="./images/earthfromspace.jpg"></img>
-        {data.map((item) => <MovieCard props={item} key={item.key}/>)}
+        {/* {data.map((item) => <MovieCard props={item} key={item.key}/>)} */}
         </div>
   )
 }
