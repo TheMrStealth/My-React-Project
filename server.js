@@ -23,3 +23,4 @@ app.get("/posts", async (req, res) => {
 })
 
 app.listen(port, ()=> console.log("listening to: ", port))
+
