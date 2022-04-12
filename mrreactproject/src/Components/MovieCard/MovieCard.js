@@ -6,9 +6,12 @@ function MovieCard({props}) {
     <div className='movie-card-container'>
         <img src={props.src} alt=''></img>
         <div className='project-card-entry'>
-            <h1>{props.title}</h1>
+            <h1>{props.email}</h1>
             <p>
-                {props.entry}
+                {props.username}
+            </p>
+            <p>
+                {props.password}
             </p>
         </div>
     </div>

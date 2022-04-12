@@ -14,7 +14,7 @@ function navbar() {
             </div>
             <div>
                 <Link to='/MovieReview'>
-                    Movie Review
+                    Games
                 </Link>
             </div>
             <div>

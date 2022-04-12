@@ -4,16 +4,23 @@ const router = express.Router();
 const db = require("../db")
 const {User} = require("../model/User");
 
-router.post('/', (req, res) => {
-    const user = new User({
-        email: req.body.email,
-        username: req.body.username,
-        password: req.body.password,
-    })
+router.get('/test', (req, res) => {
+    console.log(req.headers)
+})
 
-    user.save()
-    .then(() => res.send(user))
-    .catch((err) => res.send(err))
+router.post('/', (req, res) => {
+    if(req.headers.xpsw === process.env.PASSWORD) {
+        const user = new User({
+            email: req.body.email,
+            username: req.body.username,
+            password: req.body.password,
+        })
+    
+        user.save()
+        .then(() => res.send(user))
+        .catch((err) => res.send(err))
+    }
+    else(res.send("ACCESS DENIED").sendStatus(401))
 })
 
 router.get('/', (req, res) => {
