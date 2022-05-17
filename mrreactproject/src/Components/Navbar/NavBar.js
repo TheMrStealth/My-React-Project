@@ -18,9 +18,7 @@ function navbar() {
                 </Link>
             </div>
             <div>
-                <Link to='/Game'>
-                Dragon Ball
-                </Link>
+                <a href='/games/DBC3.html'>Dragon Ball</a>
             </div>
             <div>
                 Twitch
