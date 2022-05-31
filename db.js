@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-const server = 'localhost:27017';
+const server = `mongodb+srv://MrStealth:${process.env.PASSWORD}@cluster0.njygs.mongodb.net/test`;
 const database = 'MrStealth';
 
 class Database {
