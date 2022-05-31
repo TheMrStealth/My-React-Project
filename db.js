@@ -1,6 +1,7 @@
 let mongoose = require('mongoose');
 
-const server = `mongodb+srv://MrStealth:${process.env.PASSWORD}@cluster0.njygs.mongodb.net/test`;
+const server = `mongodb+srv://User1234567890:${process.env.PASSWORD}@cluster0.njygs.mongodb.net/?retryWrites=true&w=majority`;
+
 const database = 'MrStealth';
 
 class Database {
@@ -9,7 +10,7 @@ class Database {
     }
 
     _connect() {
-        mongoose.connect(`mongodb://${server}/${database}`)
+        mongoose.connect(server)
         .then(() => {
             console.log('Database connection successful')
         })
